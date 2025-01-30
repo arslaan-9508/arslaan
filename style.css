@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+/* font-family: "Aclonica", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    height: 400vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #e5e5e5, #ff0000);
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#bgFill {
+    background-color: hsla(0, 0%, 80%, 0.2);
+    height: 400vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#allContent {
+    background-color: hsla(0, 0%, 90%, 0.7);
+    height: 394vh;
+    width: 100vw;
+    margin: 5em;
+    border-radius: 30px;
+}
+
+
+/* Main Section */
+
+#mainSection nav {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+    border-bottom: 1px solid black;
+}
+
+#mainSection nav .name {
+    font-family: "Aclonica", sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+#mainSection nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mainSection nav ul li {
+    margin: 80px;
+}
+
+#mainSection nav ul li a {
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+}
+
+.contact {
+    height: 40px;
+    width: 155px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.contact:hover {
+    background: hsla(2, 100%, 50%, 0.65);
+    color: white;
+}
+
+.contact:active {
+    background: hsla(2, 100%, 70%, 0.65);
+}
+
+.contact:hover p {
+    color: white;
+}
+
+.hero {
+    display: flex;
+    height: 89vh;
+}
+
+.heroLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5em;
+}
+
+.heroLeft h1 {
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.heroLeft h4 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.heroLeft p {
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.India {
+    font-weight: 500;
+    display: inline-block;
+}
+
+.flag {
+    height: 20px;
+    width: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    /* display: none; */
+}
+
+.India:hover .flag {
+    display: inline-block;
+}
+
+.contact2 {
+    height: 50px;
+    width: 155px;
+    margin-top: 50px;
+    background: none;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact2 span {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.contact2:hover {
+    background: hsla(2, 100%, 50%, 0.65);
+    /* color: white; */
+}
+
+.contact2:hover span {
+    color: white;
+}
+
+.heroRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5em;
+}
+
+.black {
+    /* margin-top: 50px; */
+    position: absolute;
+    right: 9em;
+}
+
+.red {
+    /* margin-top: 50px; */
+    position: absolute;
+    right: 10em;
+}
+
+
+/* Skill Section */
+
+#skillSection {
+    height: 100vh;
+    padding: 0 5em;
+    border-top: 1px solid black;
+}
+
+#skillSection h2 {
+    font-size: 3em;
+    text-align: center;
+    margin: .5em 0 .8em 0;
+}
+
+.codeimg {
+    height: 150px;
+    width: auto;
+    position: absolute;
+}
+
+.cardsContainer {
+    /* margin: 3em; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8em;
+    grid-row-gap: 6em;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    height: 32vh;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5em 4em 4em 4em;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 2em;
+    margin-top: 1.2em;
+}
+
+.card p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.html img, .css img {
+    top: 113vh;
+}
+
+.javascript img, .react img {
+    top: 156vh;
+}
+
+
+/* About Section */
+
+#aboutSection {
+    height: 100vh;
+    padding: 0 5em;
+    border-top: 1px solid black;
+}
+
+#aboutSection h2 {
+    font-size: 3em;
+    text-align: center;
+    margin: .5em;
+}
+
+.aboutCont {
+    display: flex;
+    align-items: center;
+}
+
+.aboutCont img {
+    height: 29em;
+    width: auto;
+    border-radius: 25px;
+    z-index: 1;
+    position: absolute;
+    margin-left: .5em;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.aboutText {
+    height: 80vh;
+    width: 47vw;
+    margin-left: 27.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 3em;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.upperText {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.lowerText {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.DButton {
+    height: 50px;
+    width: 155px;
+    /* margin-top: 50px; */
+    background: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.DButton span {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.DButton:hover {
+    background: hsla(2, 100%, 50%, 0.65);
+    /* color: white; */
+}
+
+.DButton:hover span {
+    color: white;
+}
+
+
+/* Contact Section */
+
+#contactSection {
+    height: 96vh;
+    padding: 0 5em;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactSection h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+#contactSection h4 {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+    font-weight: 400;
+}
+
+.hitMeUp {
+    height: 70px;
+    width: 195px;
+    /* margin-top: 50px; */
+    background: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+
+}
+
+.hitMeUp span {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.hitMeUp:hover {
+    background: hsla(2, 100%, 50%, 0.65);
+    /* color: white; */
+}
+
+.hitMeUp:hover span {
+    color: white;
+}
+
+.linkContainer {
+    margin-top: 4em;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.6em;
+}
+
+.linkContainer img{
+    height: 80px;
+    width: auto;
+}
